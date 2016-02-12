@@ -1,3 +1,5 @@
 Users can create/join groups
 
 Done as an exam in less than 2 hours
+
+Video of site can be found at : https://vimeo.com/142698620
