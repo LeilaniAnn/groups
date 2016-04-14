@@ -9,23 +9,35 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div id="col-md-6">
-<% if flash[:error] %>
-  <% flash[:error].each do |e| %>
-    <p><%= e %></p>
-  <% end %>
-<% end %>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+<ul class="list-inline">
+<li><a class="navbar-brand" href="#"><%= image_tag("groups.png", :alt => "groups") %></a></li>
+<li><h1 style="font-family: 'Gochi Hand', cursive;color:#ad4eff;text-shadow: 2px 2px #CCC;">Groups</h1></li> 
+</ul>         
+        </div>
 <% if current_user %>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
   <form action='/main' method='post'>
-    <input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
-    <input type='hidden' name='_method' value='delete'>
-    <input type='submit' value='Log Out'>
+    <input class="form-control" type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+    <input class="form-control" type='hidden' name='_method' value='delete'>
+    <li><button class="btn btn-danger" type='submit' value='Log Out'><h6><span class="glyphicon glyphicon-log-out"></span></h6>
+Log Out</button>
   </form>
 <% end %>
-<%= yield %>
+</li>
+          </ul>
+        </div>
+        
+      </nav>
 </div>
+
+<%= yield %>
 
 </body>
 </html>

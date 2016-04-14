@@ -1,22 +1,118 @@
-<!-- NEW USERS--><div id = "signup"><h1>Sign up</h1>
-<form action="/members" method="post">
-	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-		First Name: <input type="text" name="first_name">
-		Last Name: <input type="text" name="last_name">
-		Email: <input type="email" id="Email" name="email">
 
-		Password:<input type="password" name="password">
-	<input type="submit" value="Register">
-</form>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="jumbotron">
+                <h2>Join Groups!</h2>
+
+
+                <p>Join groups with your friends and create your own for others to join.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="col-md-12">
+    <div class="col-md-6" id="signup">
+        <h1>Become a Member</h1>
+
+
+        <form action="/members" class="form-horizontal" method="post">
+            <div class="form-group">
+                <input class="form-control" name="authenticity_token" type=
+                "hidden" value="<%= form_authenticity_token %>"> 
+                <label class="col-sm-2 control-label" for="first_name">First Name:</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" id="first_name" name="first_name"
+                    placeholder="first name" type="text">
+                </div>
+            </div>
+
+
+             <div class="form-group">
+                <label class="col-sm-2 control-label" for="first_name">Last Name:</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" id="last_name" name="last_name"
+                    placeholder="last name" type="text">
+                </div>
+            </div>
+             <div class="form-group">            
+              <label class="col-sm-2 control-label" for="email">Email</label>
+            <div class="col-sm-10">
+                    <input class="form-control" id="email" name="email"
+                    placeholder="Email" type="email">
+                </div>
+            </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for=
+                "password">Password</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" id="password" name="password"
+                    placeholder="Password" type="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-default" type="submit">Sign
+                    in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+   <div class="col-md-6" id="login">
+        <h1>Login</h1>
+
+
+        <form action="/main/new" class="form-horizontal" method="post">
+            <div class="form-group">
+                <input class="form-control" name="authenticity_token" type=
+                "hidden" value="<%= form_authenticity_token %>"> <label class=
+                "col-sm-2 control-label" for="email">Email</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" id="email" name="email"
+                    placeholder="Email" type="email">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for=
+                "password">Password</label>
+
+                <div class="col-sm-10">
+                    <input class="form-control" id="password" name="password"
+                    placeholder="Password" type="password">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-default" type="submit">Sign
+                    in</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
+    <div class="row">
+        <div class="col-md-4">
+            <%if flash[:error] %>
 
-<div id = "login">
-<h1>Login</h1>
+            <div class="alert alert-danger">
+                <%flash[:error].each do |e| %>
 
-<form action="/main/new" method="post">
-	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-		Email: <input type="email" name="email">
-Password: <input type="password" name="password">
-	<input type="submit" value="Login">
-</form>
-</div>
+                <p><%= e %>
+                </p>
+                <%end %><%end %>
+            </div>
+        </div>
+    </div>
+
+
+ 
+</body>
+</html>

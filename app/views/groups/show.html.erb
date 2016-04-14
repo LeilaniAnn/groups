@@ -1,5 +1,5 @@
-<a href="/groups">DashBoard </a>
-<h2><font color="red"><%=@group.name%></font></h2>
+<div class="row text-center">
+<h2><%=@group.name%></h2>
 <p><%=@group.description%></p>
 <% if @group.member==current_user%>
 <h4>Created by <b>YOU!</b></h4>
@@ -18,7 +18,7 @@ Created by:  <b><%=  @group.member.first_name%></b>
 	<input type="hidden" name="_method" value="delete">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 	<input type="hidden" name="group_id" value="<%= @group.id %>">
-	<input type="submit" value="Leave">
+	<button type="submit" value="Leave" class="btn btn-danger">Leave</button>
 </form>
 <%else%>
 <form action="/memberships" method="post">
@@ -27,3 +27,4 @@ Created by:  <b><%=  @group.member.first_name%></b>
 	<input type="submit" value="Join">
 </form>
 <% end %>
+</div>

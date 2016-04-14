@@ -1,8 +1,12 @@
-<div id="col-md-6">
-<br>Hi <%=current_user.first_name%> !!<hr>
+<div class="container">
+<div class="jumbotron text-center">
+<h1><span class="glyphicon glyphicon-user"></span> Hi, <span style="font-family: 'Gochi Hand', cursive;color:#ad4eff"><%=current_user.first_name%></span>!!</h1>
+</div>
+
+<div class="row text-center">
 <h2>Here are the organizations you may join:</h2>
 <%@groups.each do |g|%> 
-<a href="/groups/<%=g.id%>"><%=g.name%></a><br>
+<h3><a href="/groups/<%=g.id%>"><%=g.name%></a></h3>
 Member: <%=g.memberships.count%><br>
 <p><%=g.description%></p>
 	<% if g.member==current_user%>
@@ -10,20 +14,49 @@ Member: <%=g.memberships.count%><br>
 	<input type="hidden" name="_method" value="delete">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 	<input type="submit" value="Delete">
-</form><hr>
-<%end%>
-<%end%>
-<hr>
-Create a new Organization
-<form action="/groups/" method="post">
-	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-	<input type="hidden" name="user_id" value="<%=current_user.id %>"><br>
-	Org Name: <input type="text" name="name"><br><br>
-		Description: <textarea type ='text'name="description"></textarea><br>
-	<input type="submit" value="Create">
 </form>
-
+<%end%>
+<%end%>
+</div>
 </div>
 
+<div class="row text-center">
+<h2 style="padding-bottom:25px">Create a new organization</h2>
+</div>
+        <form action="/groups/" method="post" class="form-horizontal">
+            <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+            <div class="form-group"> 
+            <input name="user_id" type="hidden" value="<%=current_user.id %>">
+            <label class="col-sm-2 control-label" for=
+                "name">Organization Name:</label> 
+                <div class="col-sm-10">
+                <input class="form-control" name="name" type="text">
+                </div>
+                </div>
+            <div class="form-group"> 
+               <label class="col-sm-2 control-label" for=
+                "description">Organization Description:</label>
+                <div class="col-sm-10">
+            <textarea class="form-control" rows="5" name="description"></textarea>
+            </div>
+            </div>
+                        <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+            <button class="btn btn-default" type="submit">Create</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <%if flash[:error] %>
 
+            <div class="alert alert-danger">
+                <%flash[:error].each do |e| %>
 
+                <p><%= e %>
+                </p>
+                <%end %><%end %>
+            </div>
+    </div>
+</div>
