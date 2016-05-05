@@ -68812,3 +68812,1419 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-14 13:15:45
 Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-14 13:15:45 -0700
   [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:12:16 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:12:53 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:12:58 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:16:20 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:17:24 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:17:27 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.5ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:18:27 -0700
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:18:51 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-14 14:33:26 -0700
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.8) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-27 15:37:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 117ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-27 15:37:30 -0700
+
+
+Started POST "/main/new" for 127.0.0.1 at 2016-04-27 15:37:32 -0700
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"4edhGtc2XfLqUMX0A8H1gXMi99GSFAECl6Cy/fy7p0o=", "email"=>"retrosole@gmail.com", "password"=>"[FILTERED]"}
+  [1m[35mMember Load (3.1ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."email" = 'retrosole@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 94ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-04-27 15:37:32 -0700
+Processing by GroupsController#index as HTML
+  [1m[36mMember Load (0.6ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mGroup Load (1.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 3]]
+  [1m[35mMember Load (0.4ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1  [["group_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 5]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered groups/index.html.erb within layouts/application (48.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 117ms (Views: 100.9ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-27 15:37:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-28 10:11:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (5.0ms)
+  [1m[35mMember Load (1.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 190ms (Views: 168.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:20 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:20 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:20 -0700
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:11:20 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.2ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (169.3ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:11:21 -0700
+
+
+Started POST "/members" for 127.0.0.1 at 2016-04-28 10:11:46 -0700
+Processing by MembersController#create as HTML
+  Parameters: {"authenticity_token"=>"4edhGtc2XfLqUMX0A8H1gXMi99GSFAECl6Cy/fy7p0o=", "first_name"=>"leilani", "last_name"=>"raranga", "email"=>"leilani@mail.com", "password"=>"[FILTERED]"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mMember Exists (1.5ms)[0m  SELECT  1 AS one FROM "members"  WHERE LOWER("members"."email") = LOWER('leilani@mail.com') LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "members" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2016-04-28 17:11:46.555583"], ["email", "leilani@mail.com"], ["first_name", "leilani"], ["last_name", "raranga"], ["password_digest", "$2a$10$V0UoeOSxm8lK6z97f0tOTO1mgNCZwTPX0Cq0uw605E/io04K2tNMO"], ["updated_at", "2016-04-28 17:11:46.555583"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 147ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-04-28 10:11:46 -0700
+Processing by GroupsController#index as HTML
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Load (1.8ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 3]]
+  [1m[35mMember Load (0.4ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1  [["group_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 5]]
+  [1m[35mMember Load (0.6ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered groups/index.html.erb within layouts/application (55.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 166ms (Views: 144.0ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:11:47 -0700
+
+
+Started GET "/groups/3" for 127.0.0.1 at 2016-04-28 10:12:07 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGroup Load (1.6ms)[0m  SELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mMember Load (1.4ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "memberships" ON "members"."id" = "memberships"."member_id" WHERE "memberships"."group_id" = $1[0m  [["group_id", 3]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mGroup Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."member_id" = $1 AND "groups"."id" = 3 LIMIT 1[0m  [["member_id", 4]]
+  Rendered groups/show.html.erb within layouts/application (11.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 135ms (Views: 103.1ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/memberships" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+Processing by MembershipsController#create as HTML
+  Parameters: {"authenticity_token"=>"4edhGtc2XfLqUMX0A8H1gXMi99GSFAECl6Cy/fy7p0o=", "group_id"=>"3"}
+  [1m[36mMember Load (1.3ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Load (0.5ms)[0m  SELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "memberships" ("created_at", "group_id", "member_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2016-04-28 17:12:13.085749"], ["group_id", 3], ["member_id", 4], ["updated_at", "2016-04-28 17:12:13.085749"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/groups/3
+Completed 302 Found in 28ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/groups/3" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGroup Load (0.4ms)[0m  SELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mMember Load (0.5ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "memberships" ON "members"."id" = "memberships"."member_id" WHERE "memberships"."group_id" = $1[0m  [["group_id", 3]]
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMember Load (0.7ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mGroup Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."member_id" = $1 AND "groups"."id" = 3 LIMIT 1[0m  [["member_id", 4]]
+  Rendered groups/show.html.erb within layouts/application (8.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 94ms (Views: 88.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:12:13 -0700
+
+
+Started DELETE "/memberships" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+Processing by MembershipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4edhGtc2XfLqUMX0A8H1gXMi99GSFAECl6Cy/fy7p0o=", "group_id"=>"3"}
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Load (0.6ms)[0m  SELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mMembership Load (0.5ms)[0m  [1mSELECT  "memberships".* FROM "memberships"  WHERE "memberships"."member_id" = 4 AND "memberships"."group_id" = 3 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "memberships" WHERE "memberships"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/groups/3
+Completed 302 Found in 27ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/groups/3" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGroup Load (0.7ms)[0m  [1mSELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mMember Load (0.5ms)[0m  SELECT "members".* FROM "members" INNER JOIN "memberships" ON "members"."id" = "memberships"."member_id" WHERE "memberships"."group_id" = $1  [["group_id", 3]]
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Exists (1.6ms)[0m  SELECT  1 AS one FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."member_id" = $1 AND "groups"."id" = 3 LIMIT 1  [["member_id", 4]]
+  Rendered groups/show.html.erb within layouts/application (5.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 142ms (Views: 135.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.6ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:12:16 -0700
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+Processing by GroupsController#index as HTML
+  [1m[35mMember Load (0.9ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35m (4.6ms)[0m  SELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1  [["group_id", 3]]
+  [1m[36mMember Load (0.5ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1  [["group_id", 5]]
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered groups/index.html.erb within layouts/application (35.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 157ms (Views: 147.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:12:28 -0700
+
+
+Started POST "/groups/" for 127.0.0.1 at 2016-04-28 10:12:45 -0700
+Processing by GroupsController#create as HTML
+  Parameters: {"authenticity_token"=>"4edhGtc2XfLqUMX0A8H1gXMi99GSFAECl6Cy/fy7p0o=", "user_id"=>"4", "name"=>"mcdonalds", "description"=>"hamburgers and fries"}
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "groups" ("created_at", "description", "member_id", "name", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2016-04-28 17:12:45.593287"], ["description", "hamburgers and fries"], ["member_id", 4], ["name", "mcdonalds"], ["updated_at", "2016-04-28 17:12:45.593287"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "memberships" ("created_at", "group_id", "member_id", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2016-04-28 17:12:45.604252"], ["group_id", 6], ["member_id", 4], ["updated_at", "2016-04-28 17:12:45.604252"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/groups
+Completed 302 Found in 24ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2016-04-28 10:12:45 -0700
+Processing by GroupsController#index as HTML
+  [1m[36mMember Load (3.8ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Load (0.6ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 3]]
+  [1m[35mMember Load (0.5ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1  [["group_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1[0m  [["group_id", 5]]
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "memberships"  WHERE "memberships"."group_id" = $1  [["group_id", 6]]
+  [1m[36mMember Load (0.6ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered groups/index.html.erb within layouts/application (40.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 230ms (Views: 221.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:12:46 -0700
+
+
+Started GET "/groups/6" for 127.0.0.1 at 2016-04-28 10:12:50 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mMember Load (0.4ms)[0m  SELECT "members".* FROM "members" INNER JOIN "memberships" ON "members"."id" = "memberships"."member_id" WHERE "memberships"."group_id" = $1  [["group_id", 6]]
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mGroup Exists (0.4ms)[0m  SELECT  1 AS one FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."member_id" = $1 AND "groups"."id" = 6 LIMIT 1  [["member_id", 4]]
+  Rendered groups/show.html.erb within layouts/application (5.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/memberships" for 127.0.0.1 at 2016-04-28 10:12:57 -0700
+Processing by MembershipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4edhGtc2XfLqUMX0A8H1gXMi99GSFAECl6Cy/fy7p0o=", "group_id"=>"6"}
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mGroup Load (0.4ms)[0m  [1mSELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mMembership Load (0.6ms)[0m  SELECT  "memberships".* FROM "memberships"  WHERE "memberships"."member_id" = 4 AND "memberships"."group_id" = 6 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "memberships" WHERE "memberships"."id" = $1  [["id", 9]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/groups/6
+Completed 302 Found in 10ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/groups/6" for 127.0.0.1 at 2016-04-28 10:12:57 -0700
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups"  WHERE "groups"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mMember Load (1.3ms)[0m  [1mSELECT "members".* FROM "members" INNER JOIN "memberships" ON "members"."id" = "memberships"."member_id" WHERE "memberships"."group_id" = $1[0m  [["group_id", 6]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mGroup Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."member_id" = $1 AND "groups"."id" = 6 LIMIT 1[0m  [["member_id", 4]]
+  Rendered groups/show.html.erb within layouts/application (5.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 110ms (Views: 105.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hellokitty/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/hellokitty/.rvm/gems/ruby-2.2.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/groups.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/members.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/scripts.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+
+
+Started GET "/assets/groups.png" for 127.0.0.1 at 2016-04-28 10:12:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
